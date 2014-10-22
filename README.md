@@ -20,11 +20,10 @@ If you build it yourself, it´ll differ from the one provided on Vagrant Cloud i
 * Enable automatic box update checking.
 * Forward the output of graphical programs using X11 to the host machine.
 * [Enable memory and swap accounting](http://docs.docker.io/en/latest/installation/ubuntulinux/#memory-and-swap-accounting).
-* Check the correct additions version when booting the machine. Required:
-`vagrant plugin install vagrant-vbguest`
+* Check the correct additions version when booting the machine. It´s required to install the next [plugin](https://github.com/dotless-de/vagrant-vbguest).
+
+  ```
+  vagrant plugin install vagrant-vbguest
+  ```
 
 You can login with username `vagrant` and password `vagrant`. This user has sudo privileges. The root user also has password `vagrant`.
-
-
-
-
