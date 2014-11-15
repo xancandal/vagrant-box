@@ -6,7 +6,7 @@ This repository contains the *Vagrantfile* and *associated files* for setting up
 The prebuilt box with Docker version 1.3.0 is available on [Vagrant Cloud](https://vagrantcloud.com/xancandal/boxes/trusty64-docker-vbox).
 
 ```
-vagrant init xancandal/trusty64-docker-vbox
+$ vagrant init xancandal/trusty64-docker-vbox
 ```
 
 If you build it yourself, it´ll differ from the one provided on Vagrant Cloud in the way that you also automatically install the latest version of [Docker](https://www.docker.io/) available.
@@ -23,7 +23,7 @@ If you build it yourself, it´ll differ from the one provided on Vagrant Cloud i
 * Check the correct additions version when booting the machine. It´s required to install the next [plugin](https://github.com/dotless-de/vagrant-vbguest).
 
   ```
-  vagrant plugin install vagrant-vbguest
+  $ vagrant plugin install vagrant-vbguest
   ```
 
 You can login with username `vagrant` and password `vagrant`. This user has sudo privileges. The root user also has password `vagrant`.
