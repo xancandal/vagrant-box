@@ -1,7 +1,7 @@
 
 ### Ubuntu 14.04.1 LTS with Docker supporting VirtualBox provider
 
-This repository contains the *Vagrantfile* and *associated files* for setting up a box with a clean Ubuntu 14.04.1 LTS 64-bit installation for [Vagrant](https://www.vagrantup.com/). It currently supports [VirtualBox](https://www.virtualbox.org/) provider.
+This repository contains the *Vagrantfile* and *associated files* for setting up a box with a clean Ubuntu 14.04.1 LTS 64-bit installation for [Vagrant](https://www.vagrantup.com/). It currently supports the [VirtualBox](https://www.virtualbox.org/) provider.
 
 The prebuilt box with Docker version 1.3.0 is available on [Vagrant Cloud](https://vagrantcloud.com/xancandal/boxes/trusty64-docker-vbox).
 
@@ -9,7 +9,7 @@ The prebuilt box with Docker version 1.3.0 is available on [Vagrant Cloud](https
 $ vagrant init xancandal/trusty64-docker-vbox
 ```
 
-If you build it yourself, it´ll differ from the one provided on Vagrant Cloud in the way that you also automatically install the latest version of [Docker](https://www.docker.io/) available.
+If you build it yourself, it´ll differ from the one provided on Vagrant Cloud in that you also automatically install the latest version of [Docker](https://www.docker.io/) available.
 
 #### Box customization:
 
@@ -21,7 +21,7 @@ If you build it yourself, it´ll differ from the one provided on Vagrant Cloud i
 * Forward the output of graphical programs using X11 to the host machine.
 * [Enable memory and swap accounting](http://docs.docker.io/en/latest/installation/ubuntulinux/#memory-and-swap-accounting).
 
-Check the correct additions version when booting the machine. It´s required to install the next [plugin](https://github.com/dotless-de/vagrant-vbguest).
+If you want to automatically check for the correct VirtualBox guest additions version when booting the machine then you should install the next [plugin](https://github.com/dotless-de/vagrant-vbguest).
 
   ```
   $ vagrant plugin install vagrant-vbguest
